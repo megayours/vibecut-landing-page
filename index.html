@@ -11,11 +11,14 @@
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
+  <!-- PARTICLES -->
+  <canvas id="particles" class="particles"></canvas>
+
   <!-- HERO -->
   <section id="hero" class="hero">
     <div class="hero__video-wrap">
       <video class="hero__video" autoplay muted loop playsinline>
-        <source src="https://cdn.coverr.co/videos/coverr-abstract-neon-light-waves-1584/1080p.mp4" type="video/mp4" />
+        <source src="hero.mp4" type="video/mp4" />
       </video>
       <div class="hero__overlay"></div>
     </div>
@@ -26,7 +29,7 @@
         A fully autonomous<br />video creation system.
       </h1>
       <p class="hero__sub">Done before you type.</p>
-      <a href="#about" class="hero__cta">Learn More</a>
+      <a href="#about" class="hero__cta"><span>Learn More</span></a>
     </div>
 
     <div class="hero__scroll-hint">
@@ -38,7 +41,7 @@
   <section id="about" class="about">
     <div class="container">
       <h2 class="about__headline reveal">
-        Vibecut is a self-learning creative system for video.
+        Vibecut is a <span class="gradient-text">self-learning</span> creative system for video.
       </h2>
       <p class="about__body reveal">
         You start with an idea.<br />
@@ -50,41 +53,66 @@
 
   <!-- HOW IT WORKS -->
   <section id="how" class="how">
+    <div class="how__grid-bg"></div>
     <div class="container">
-      <h2 class="how__title reveal">How it works</h2>
+      <h2 class="how__title">How it works</h2>
 
-      <div class="how__grid">
-        <article class="how__card reveal">
-          <span class="how__num">01</span>
-          <h3>You begin with intent</h3>
-          <p>A branding kit, a character, a concept, a reference, a mood, a rough direction.</p>
-        </article>
-        <article class="how__card reveal">
-          <span class="how__num">02</span>
-          <h3>Vibecut builds structure</h3>
-          <p>It translates that intent into a video system: scenes, composition, movement, pacing.</p>
-        </article>
-        <article class="how__card reveal">
-          <span class="how__num">03</span>
-          <h3>The output is editable</h3>
-          <p>You can refine, adjust, and shape the result without rebuilding everything from scratch.</p>
-        </article>
-        <article class="how__card reveal">
-          <span class="how__num">04</span>
-          <h3>It gets better with use</h3>
-          <p>Vibecut learns from what you choose, what you change, and what you keep.</p>
-        </article>
-        <article class="how__card reveal">
-          <span class="how__num">05</span>
-          <h3>It works ahead of you</h3>
-          <p>Vibecut autonomously generates new brand-aligned video every day.</p>
-        </article>
-        <article class="how__card reveal">
-          <span class="how__num">06</span>
-          <h3>It optimises for virality</h3>
-          <p>Vibecut detects trending formats, emerging aesthetics, and viral creative patterns, then turns those signals into new content aligned with your style.</p>
-        </article>
+      <div class="how__scene">
+        <div class="how__ring">
+          <article class="how__card" data-index="0">
+            <div class="how__card-glow"></div>
+            <span class="how__num">01</span>
+            <h3>You begin with intent</h3>
+            <p>A branding kit, a character, a concept, a reference, a mood, a rough direction.</p>
+            <div class="how__card-scanline"></div>
+          </article>
+          <article class="how__card" data-index="1">
+            <div class="how__card-glow"></div>
+            <span class="how__num">02</span>
+            <h3>Vibecut builds structure</h3>
+            <p>It translates that intent into a video system: scenes, composition, movement, pacing.</p>
+            <div class="how__card-scanline"></div>
+          </article>
+          <article class="how__card" data-index="2">
+            <div class="how__card-glow"></div>
+            <span class="how__num">03</span>
+            <h3>The output is editable</h3>
+            <p>You can refine, adjust, and shape the result without rebuilding everything from scratch.</p>
+            <div class="how__card-scanline"></div>
+          </article>
+          <article class="how__card" data-index="3">
+            <div class="how__card-glow"></div>
+            <span class="how__num">04</span>
+            <h3>It gets better with use</h3>
+            <p>Vibecut learns from what you choose, what you change, and what you keep.</p>
+            <div class="how__card-scanline"></div>
+          </article>
+          <article class="how__card" data-index="4">
+            <div class="how__card-glow"></div>
+            <span class="how__num">05</span>
+            <h3>It works ahead of you</h3>
+            <p>Vibecut autonomously generates new brand-aligned video every day.</p>
+            <div class="how__card-scanline"></div>
+          </article>
+          <article class="how__card" data-index="5">
+            <div class="how__card-glow"></div>
+            <span class="how__num">06</span>
+            <h3>It optimises for virality</h3>
+            <p>Detects trending formats, emerging aesthetics, and viral patterns — then creates content aligned with your style.</p>
+            <div class="how__card-scanline"></div>
+          </article>
+        </div>
       </div>
+
+      <div class="how__nav">
+        <button class="how__nav-btn how__nav-btn--prev" aria-label="Previous">&larr;</button>
+        <div class="how__progress">
+          <div class="how__progress-bar"></div>
+          <div class="how__progress-fill"></div>
+        </div>
+        <button class="how__nav-btn how__nav-btn--next" aria-label="Next">&rarr;</button>
+      </div>
+      <p class="how__label"></p>
     </div>
   </section>
 
@@ -116,7 +144,7 @@
         </div>
       </div>
 
-      <p class="usecases__closing reveal">One system. Many visual languages.</p>
+      <p class="usecases__closing reveal">One system. <span class="gradient-text">Many visual languages.</span></p>
     </div>
   </section>
 
