@@ -21,8 +21,8 @@
   --text: #1a1a1a;
   --text-dim: #666;
   --border: rgba(0, 0, 0, 0.08);
-  --font-body: 'Inter', system-ui, sans-serif;
-  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Radio Canada', 'Montserrat', sans-serif;
 }
 
 html {
