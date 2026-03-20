@@ -10,10 +10,10 @@
 :root {
   --orange: #ff8717;
   --orange-deep: #e56e00;
-  --magenta: #e0289a;
-  --cyan: #00b8d4;
+  --amber: #ffb347;
+  --gold: #f5c842;
   --orange-glow: rgba(255, 135, 23, 0.3);
-  --gradient-main: linear-gradient(135deg, var(--orange) 0%, var(--magenta) 50%, var(--cyan) 100%);
+  --gradient-main: linear-gradient(135deg, var(--orange) 0%, var(--amber) 50%, var(--gold) 100%);
   --bg: #fafafa;
   --bg-hero: #111;
   --bg-card: rgba(0, 0, 0, 0.03);
@@ -375,7 +375,7 @@ body {
   background: radial-gradient(
     ellipse at center,
     rgba(255, 135, 23, 0.12) 0%,
-    rgba(224, 40, 154, 0.05) 40%,
+    rgba(245, 200, 66, 0.08) 40%,
     transparent 70%
   );
   opacity: 0;
@@ -401,7 +401,7 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--orange), var(--cyan), transparent);
+  background: linear-gradient(90deg, transparent, var(--orange), var(--gold), transparent);
   opacity: 0;
   transition: opacity 0.4s;
   pointer-events: none;

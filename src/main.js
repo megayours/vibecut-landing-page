@@ -27,7 +27,7 @@ function createParticles() {
       r: Math.random() * 1.5 + 0.5,
       dx: (Math.random() - 0.5) * 0.3,
       dy: (Math.random() - 0.5) * 0.3,
-      color: ['#ff8717', '#e0289a', '#00b8d4'][Math.floor(Math.random() * 3)],
+      color: ['#ff8717', '#ffb347', '#f5c842'][Math.floor(Math.random() * 3)],
       alpha: Math.random() * 0.15 + 0.05,
     });
   }
@@ -250,7 +250,7 @@ if (window.matchMedia('(pointer: fine)').matches) {
     width: '350px',
     height: '350px',
     borderRadius: '50%',
-    background: 'radial-gradient(circle, rgba(255,135,23,0.07) 0%, rgba(224,40,154,0.03) 40%, transparent 70%)',
+    background: 'radial-gradient(circle, rgba(255,135,23,0.07) 0%, rgba(245,200,66,0.03) 40%, transparent 70%)',
     pointerEvents: 'none',
     zIndex: '0',
     transform: 'translate(-50%, -50%)',
